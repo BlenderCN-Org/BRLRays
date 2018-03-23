@@ -14,7 +14,7 @@ different machines. However, knowing the computation constrains back in the
 day, it was well optimized. So using later computers may work even on a weak
 workstation.
 It dose suffer, in my openion, ease of use. The interface is not acceptable
-in today's standers. Tk/TCL and X display systems are classic, thou developed
+in today's standers. Tcl/Tk and X display systems are classic, thou developed
 for CAD use.. I could not get my head through it. Instad of continuing
 developing it UI, why not integrate it into an existing package?
 
