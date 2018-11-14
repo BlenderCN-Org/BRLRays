@@ -29,11 +29,11 @@ Wish me luck in finishing my milestone!
 Installation Instructions:
 --------------------------
 
-Copy the 'RayTrace' folder into Blender scripts/addons directory and
-then enable RayTrace addon on 'Addons > Render' section of Blender
+Copy the 'BRLRays' folder into Blender scripts/addons directory and
+then enable BRLRays addon on 'Addons > Render' section of Blender
 'User Preferences' panel.
 
 After enabling the addon, configure the 'Path to BRL-CAD Installation'
-setting that appears under RayTrace addon on the same 'User Preferences'
+setting that appears under BRLRays addon on the same 'User Preferences'
 panel by selecting the folder where BRL-CAD binary is installed (usually at
 /usr/brlcad/bin).

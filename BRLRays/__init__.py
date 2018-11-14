@@ -1,5 +1,5 @@
 bl_info = {
-        "name": "RayTrace",
+        "name": "BRLRays",
         "author": "Morning Star (Zitara)",
         "version": (0, 0, 1).
         "blender": (2, 75, 0),
@@ -28,11 +28,11 @@ else:
                 # Use the env var path, if set ..
                 'BRL-CAD_ROOT',
                 # .. or load the last path from CEG file
-                efutil.find_config_value('RayTrace', 'defaults',
+                efutil.find_config_value('BRLRays', 'defaults',
                     'install_path', '')
                 )
 
-        class RayTraceAddonPreferences(AddonPreferences):
+        class BRLRaysAddonPreferences(AddonPreferences):
             # this must match the addon name
             bl_idname = __name__
 
@@ -61,27 +61,27 @@ else:
                 layout.prop(self, "install_path")
                 layout.prop(self, "previrew_export")
 
-    RayTraceAddon = Addon(bl_info)
+    BRLRaysAddon = Addon(bl_info)
 
     def get_prefs():
         return bpy.context.user_preferences.addons[__name__].preferences
 
-    # patch the RayTraceAddon class to make it easier to get the addon prefs
-    RayTraceAddon.get_prefs = get_prefs
+    # patch the BRLRaysAddon class to make it easier to get the addon prefs
+    BRLRaysAddon.get_prefs = get_prefs
 
-    addon_register, addon_unregister = RayTraceAddon.init_functions()
+    addon_register, addon_unregister = BRLRaysAddon.init_functions()
 
     def register():
-        bpy.utils.register_class(RayTraceAddonPreferences)
+        bpy.utils.register_class(BRLRaysAddonPreferences)
         nodeitems_utils.register_node_categories("RAYTRACE_SHADER_NODES",
                 ui.space_node.raytrace_shader_node_catagories)
         addon_register()
 
     def unregister():
-        bpy.utils.unregister_class(RayTraceAddonPreferences)
+        bpy.utils.unregister_class(BRLRaysAddonPreferences)
         nodeitems_utils.unregister_node_categories("RAYTRACE_SHADER_NODES")
         addon_unregister()
 
     # Importing the core package causes extensions_framework manged
-    # RNA class registration via @RayTraceAddon.addon_register_class
+    # RNA class registration via @BRLRaysAddon.addon_register_class
     from . import core
