@@ -1,0 +1,62 @@
+BRL-CAD Release 7.25.0  The BRL-CAD Raytracer RT
+    Sun, 17 Dec 2017 01:51:09 +0300, Compilation 29
+    Zitar@unknown
+BRL-CAD Release 7.25.0  The BRL-CAD Ray-Tracing Library
+    Sun, 17 Dec 2017 01:51:09 +0300, Compilation 29
+    Zitar@unknown
+BRL-CAD Release 7.25.0  The BRL-CAD Numerical Computation Library
+    Sun, 17 Dec 2017 01:51:09 +0300, Compilation 29
+    Zitar@unknown
+BRL-CAD Release 7.25.0  The BRL-CAD Utility Library
+    Sun, 17 Dec 2017 01:51:09 +0300, Compilation 29
+    Zitar@unknown
+
+Compile-time debug symbols are available
+Running on MacBookBro.local
+Planning to run with 4 processors
+rt -M -o box.pix
+opendb /Users/Zitar/project/brlcad/tmp/box.g;
+tree cube;
+db title:  Untitled BRL-CAD Database
+DIRBUILD: cpu = 0.000243 sec, elapsed = 0.001151 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 3950592maxrss 3+124pf 0+2csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=58, #free=0, #realloc=4 (58 retained)
+0x11baef030 TOL 5.000000e-04 (sq=2.500000e-07) perp=1.000000e-06, para=9.999990e-01
+BRL-CAD Release 7.25.0  The BRL-CAD Optical Shader Library
+    Sun, 17 Dec 2017 01:51:09 +0300, Compilation 29
+    Zitar@unknown
+Additional #malloc=2053, #free=0, #realloc=1 (2053 retained)
+GETTREE: cpu = 0.000184 sec, elapsed = 0.000317 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4890624maxrss 2+35pf 0+10csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=1091, #free=4768581930775043, #realloc=3 (-4768581930773952 retained)
+
+...................Frame     0...................
+PREP: cpu = 0.00013 sec, elapsed = 0.00067 sec
+    parent: 0.0user 0.0sys 0:00real 0% 0i+0d 4921344maxrss 7+3pf 0+1csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=42, #free=85761906986496, #realloc=4 (-85761906986454 retained)
+NUBSP: 0 nu, 0 cut, 1 box (1 empty)
+Tree: 1 solids in 1 regions
+Model: X(-1000, 1000), Y(-1000, 1000), Z(-1000, 1000)
+View: 35 azimuth, 25 elevation off of front view
+Orientation: 0.248097, 0.476591, 0.748097, 0.389435
+Eye_pos: 5143.52, 3601.53, 2927.99
+Size: 2000mm
+Grid: (3.90625, 3.90625) mm, (512, 512) pixels
+Beam: radius=1.95312 mm, divergence=0 mm/1mm
+Output file is 'box.pix' 512x512 pixels
+Mode: scanline-per-CPU buffering
+
+SHOT: cpu = 0.333199 sec, elapsed = 0.088004 sec
+    parent: 0.3user 0.0sys 0:00real 412% 0i+0d 8601600maxrss 19+47pf 0+263csw
+  children: 0.0user 0.0sys 0:00real 0% 0i+0d 0maxrss 0+0pf 0+0csw
+Additional #malloc=599, #free=1284229581541376, #realloc=3 (-1284229581540777 retained)
+194048 solid/ray intersections: 194048 hits + 0 miss
+pruned 100.0%:  0 model RPP, 0 dups skipped, 0 solid RPP
+Frame  0:     262144 pixels in      0.08 sec =   3146996.24 pixels/sec
+Frame  0:     194048 rays   in      0.08 sec =   2329514.79 rays/sec (RTFM)
+Frame  0:     194048 rays   in      0.33 sec =    582378.70 rays/CPU_sec
+Frame  0:     194048 rays   in      0.09 sec =   2204990.68 rays/sec (wallclock)
+

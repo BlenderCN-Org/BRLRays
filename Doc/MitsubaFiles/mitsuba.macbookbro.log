@@ -1,0 +1,124 @@
+2018-05-16 18:09:24 INFO  main [mitsuba.cpp:256] Mitsuba version 0.5.0 (Mac OS, 64 bit), Copyright (c) 2014 Wenzel Jakob
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "wrk0"
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "wrk1"
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "wrk2"
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "wrk3"
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "flush"
+2018-05-16 18:09:24 INFO  main [mitsuba.cpp:356] Parsing scene description from "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/direct.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/ldsampler.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/gaussian.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/ldrfilm.dylib" ..
+2018-05-16 18:09:24 WARN  main [scenehandler.cpp:795] In file "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" (near line 39): Unqueried attribute "fitHorizontal" in element "film"
+2018-05-16 18:09:24 WARN  main [scenehandler.cpp:795] In file "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" (near line 39): Unqueried attribute "pixelAspectX" in element "film"
+2018-05-16 18:09:24 WARN  main [scenehandler.cpp:795] In file "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" (near line 39): Unqueried attribute "pixelAspectY" in element "film"
+2018-05-16 18:09:24 WARN  main [scenehandler.cpp:795] In file "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" (near line 39): Unqueried attribute "shiftX" in element "film"
+2018-05-16 18:09:24 WARN  main [scenehandler.cpp:795] In file "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.xml" (near line 39): Unqueried attribute "shiftY" in element "film"
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/perspective.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/ply.dylib" ..
+2018-05-16 18:09:24 INFO  main [PLYLoader] Loading geometry from "Cube_001_0000_m000_0_000000.ply" ..
+2018-05-16 18:09:24 INFO  main [PLYLoader] "Cube_001_0000_m000_0_000000": Loaded 12 triangles, 24 vertices (720 B in 0 ms).
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/diffuse.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/area.dylib" ..
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/sphere.dylib" ..
+2018-05-16 18:09:24 INFO  main [PLYLoader] Loading geometry from "Plane_0000_m000_0_000000.ply" ..
+2018-05-16 18:09:24 INFO  main [PLYLoader] "Plane_0000_m000_0_000000": Loaded 2 triangles, 4 vertices (120 B in 0 ms).
+2018-05-16 18:09:24 INFO  main [PluginManager] Loading plugin "plugins/roughplastic.dylib" ..
+2018-05-16 18:09:24 DEBUG main [rtrans.h:118] Loading 100x50x100 (1.9 MiB) rough transmittance samples from "/Applications/Mitsuba.app/data/microfacet/beckmann.dat"
+2018-05-16 18:09:24 DEBUG main [rtrans.h:132] Precomputed data is available for the IOR range [1.0001, 4.0] and roughness range [0.0000, 4.0]
+2018-05-16 18:09:24 DEBUG main [rtrans.h:296] Reducing dimension from 3D to 2D (19.7 KiB), eta = 1.489587
+2018-05-16 18:09:24 DEBUG main [rtrans.h:296] Reducing dimension from 3D to 2D (19.7 KiB), eta = 0.671327
+2018-05-16 18:09:24 DEBUG main [rtrans.h:359] Reducing dimension from 2D to 1D (404 B), alpha = 0.367879
+2018-05-16 18:09:24 INFO  main [PLYLoader] Loading geometry from "Cube_0000_m000_0_000000.ply" ..
+2018-05-16 18:09:24 INFO  main [PLYLoader] "Cube_0000_m000_0_000000": Loaded 24 triangles, 60 vertices (1.7 KiB in 0 ms).
+2018-05-16 18:09:24 DEBUG main [Thread] Spawning thread "ren0"
+2018-05-16 18:09:24 INFO  ren0 [KDTreeBase] Constructing a SAH kd-tree (39 primitives) ..
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Creating a preliminary index list (156 B)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Computed scene bounds in 0 ms
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] kd-tree configuration:
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Traversal cost           : 15.00
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Query cost               : 20.00
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Empty space bonus        : 0.90
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Max. tree depth          : 14
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Scene bounding box (min) : [-8, 0, -8]
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Scene bounding box (max) : [8, 6.15386, 8]
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Min-max bins             : 128
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    O(n log n) method        : use for <= 65536 primitives
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Perfect splits           : yes
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Retract bad splits       : yes
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Stopping primitive count : 6
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Build tree in parallel   : no
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 INFO  ren0 [KDTreeBase] Finished -- took 0 ms.
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Temporary memory statistics:
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Classification storage : 50 B
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Indirection entries    : 0 (0 B)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Main thread:
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]       Left events   : 1 chunks (512.0 KiB)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]       Right events  : 1 chunks (512.0 KiB)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]       kd-tree nodes : 61 entries, 1 blocks (512.0 KiB)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]       Indices       : 93 entries, 1 blocks (512.0 KiB)
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Total: 2.0 MiB
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Optimizing memory layout ..
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Finished -- took 0 ms.
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Structural kd-tree statistics:
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Parallel work units         : 0
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Node storage cost           : 440 B
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Index storage cost          : 372 B
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Inner nodes                 : 27
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Leaf nodes                  : 28
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Nonempty leaf nodes         : 24
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Leaf node histogram         : 0(4) 1(7) 2(4) 3(1) 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]                                  4(5) 5(1) 6(1) 7(2) 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]                                  8(1) 9(0) 10(1) 11(0) 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]                                  12(1) 13(0) 14(0) 15(0) 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] Qualitative kd-tree statistics:
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Retracted splits            : 4
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Pruned primitives           : 0
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Largest leaf node           : 12 primitives
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Avg. prims/nonempty leaf    : 3.88
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Expected traversals/query   : 3.58
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Expected leaf visits/query  : 1.82
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Expected prim. visits/query : 3.17
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase]    Final cost                  : 117.02
+2018-05-16 18:09:24 DEBUG ren0 [KDTreeBase] 
+2018-05-16 18:09:24 DEBUG ren0 [ShapeKDTree] Precomputing triangle intersection information (1.8 KiB)
+2018-05-16 18:09:24 DEBUG ren0 [ShapeKDTree] Finished -- took 0 ms.
+2018-05-16 18:09:24 DEBUG ren0 [ShapeKDTree] 
+2018-05-16 18:09:24 INFO  ren0 [SamplingIntegrator] Starting render job (1280x720, 16 samples, 4 cores, SSE2 enabled) ..
+2018-05-16 18:09:29 DEBUG flush[LDRFilm] Developing film ..
+2018-05-16 18:09:29 INFO  flush[LDRFilm] Writing image to "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.png" ..
+2018-05-16 18:09:29 DEBUG flush[Bitmap] Writing a 1280x720 PNG file
+2018-05-16 18:09:32 INFO  ren0 [RenderJob] Render time: 8.0290s
+2018-05-16 18:09:32 DEBUG ren0 [LDRFilm] Developing film ..
+2018-05-16 18:09:32 INFO  ren0 [LDRFilm] Writing image to "/Users/Zitar/Project/blender/projects/testMats.Scene.00001.png" ..
+2018-05-16 18:09:32 DEBUG ren0 [Bitmap] Writing a 1280x720 PNG file
+2018-05-16 18:09:32 DEBUG ren0 [Thread] Thread "ren0" has finished
+2018-05-16 18:09:32 DEBUG flush[Thread] Thread "flush" has finished
+2018-05-16 18:09:32 INFO  main [statistics.cpp:142] Statistics:
+------------------------------------------------------------
+ * Loaded plugins :
+    -  plugins/area.dylib [Area light]
+    -  plugins/diffuse.dylib [Smooth diffuse BRDF]
+    -  plugins/direct.dylib [Direct illumination integrator]
+    -  plugins/gaussian.dylib [Gaussian reconstruction filter]
+    -  plugins/ldrfilm.dylib [Low dynamic range film]
+    -  plugins/ldsampler.dylib [Low discrepancy sampler]
+    -  plugins/perspective.dylib [Perspective camera]
+    -  plugins/ply.dylib [PLY mesh loader]
+    -  plugins/roughplastic.dylib [Rough plastic BRDF]
+    -  plugins/sphere.dylib [Sphere intersection primitive]
+
+  * General :
+    -  Normal rays traced : 27.638 M
+    -  Shadow rays traced : 12.252 M
+------------------------------------------------------------
+2018-05-16 18:09:32 DEBUG wrk2 [Thread] Thread "wrk2" has finished
+2018-05-16 18:09:32 DEBUG wrk3 [Thread] Thread "wrk3" has finished
+2018-05-16 18:09:32 DEBUG wrk0 [Thread] Thread "wrk0" has finished
+2018-05-16 18:09:32 DEBUG wrk1 [Thread] Thread "wrk1" has finished

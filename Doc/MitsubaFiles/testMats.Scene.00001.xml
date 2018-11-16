@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- # Main Scene File -->
+<scene version="0.5.0">
+	<integrator name="integrator" type="direct">
+		<integer name="bsdfSamples" value="1"/>
+		<boolean name="strictNormals" value="false"/>
+		<boolean name="hideEmitters" value="false"/>
+		<integer name="emitterSamples" value="1"/>
+	</integrator>
+	<sensor id="Camera-camera" type="perspective">
+		<sampler name="sampler" type="ldsampler">
+			<integer name="sampleCount" value="16"/>
+		</sampler>
+		<float name="fov" value="49.134343"/>
+		<string name="fovAxis" value="x"/>
+		<transform name="toWorld">
+			<lookat up="-0.324013, 0.895396, -0.305421" target="6.829573, 4.898394, 5.893469" origin="7.481132, 5.343665, 6.507640"/>
+		</transform>
+		<float name="farClip" value="100.000000"/>
+		<film name="film" type="ldrfilm">
+			<integer name="width" value="1280"/>
+			<string name="label[10,10]" value="Integrator:$integrator['type'], $film['width']x$film['height'],$sampler['sampleCount']spp, rendertime:$scene['renderTime'],memory:$scene['memUsage']"/>
+			<rfilter name="rfilter" type="gaussian">
+				<float name="stddev" value="0.500000"/>
+			</rfilter>
+			<float name="shiftY" value="0.000000"/>
+			<boolean name="fitHorizontal" value="true"/>
+			<float name="shiftX" value="0.000000"/>
+			<float name="pixelAspectY" value="1.000000"/>
+			<string name="pixelFormat" value="rgb"/>
+			<float name="gamma" value="-1.000000"/>
+			<boolean name="banner" value="true"/>
+			<string name="fileFormat" value="png"/>
+			<float name="pixelAspectX" value="1.000000"/>
+			<string name="tonemapMethod" value="gamma"/>
+			<float name="exposure" value="0.000000"/>
+			<boolean name="highQualityEdges" value="false"/>
+			<integer name="height" value="720"/>
+		</film>
+		<float name="nearClip" value="0.100000"/>
+	</sensor>
+	<shape id="Cube.001_Cube.001_0000_m000_0.000000" type="ply">
+		<string name="filename" value="/Users/Zitar/Project/blender/projects/testMats/Scene/00001/Cube_001_0000_m000_0_000000.ply"/>
+		<transform name="toWorld">
+			<matrix value="1.000000 0.000000 0.000000 2.000000 0.000000 0.000000 1.000000 3.000000 0.000000 -1.000000 0.000000 -3.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+	</shape>
+	<shape id="Lamp-pointlight" type="sphere">
+		<emitter name="emitter" type="area">
+			<float name="samplingWeight" value="1.000000"/>
+			<rgb name="radiance" value="300.000000 300.000000 300.000000"/>
+		</emitter>
+		<transform name="toWorld">
+			<matrix value="-0.290865 -0.771101 0.566393 4.076245 -0.055189 0.604525 0.794672 5.903862 -0.955171 0.199883 -0.218391 -1.005454 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<float name="radius" value="0.250000"/>
+		<bsdf name="bsdf" type="diffuse">
+			<rgb name="reflectance" value="1.000000 1.000000 1.000000"/>
+		</bsdf>
+	</shape>
+	<shape id="Plane_Plane_0000_m000_0.000000" type="ply">
+		<string name="filename" value="/Users/Zitar/Project/blender/projects/testMats/Scene/00001/Plane_0000_m000_0_000000.ply"/>
+		<transform name="toWorld">
+			<matrix value="8.000000 0.000000 0.000000 0.000000 0.000000 0.000000 8.000000 0.000000 0.000000 -8.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+	</shape>
+	<bsdf id="Material-bl_mat-bsdf" type="roughplastic">
+		<float name="alpha" value="0.367879"/>
+		<rgb name="diffuseReflectance" value="0.640000 0.640000 0.640000"/>
+		<rgb name="specularReflectance" value="0.500000 0.500000 0.500000"/>
+		<string name="distribution" value="beckmann"/>
+	</bsdf>
+	<shape id="Cube_Cube_0000_m000_0.000000" type="ply">
+		<string name="filename" value="/Users/Zitar/Project/blender/projects/testMats/Scene/00001/Cube_0000_m000_0_000000.ply"/>
+		<transform name="toWorld">
+			<matrix value="1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000 1.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+		<ref name="bsdf" id="Material-bl_mat-bsdf"/>
+	</shape>
+</scene>
